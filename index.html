@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZERIA LE SELECT - Mostaganem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --main-red: #e63946;
+            --main-gold: #f1a100;
+            --dark-bg: #111;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid var(--main-gold);
+        }
+
+        .location-info {
+            font-size: 0.9rem;
+            color: var(--main-gold);
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 15px;
+            padding-bottom: 120px;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 30px 0 15px;
+            color: var(--main-red);
+            border-bottom: 2px solid var(--main-gold);
+            width: fit-content;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .menu-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--main-red);
+        }
+
+        .item-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #222;
+        }
+
+        .prices-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .price-tag {
+            flex: 1;
+            background: #fff9f0;
+            border: 1px solid #ffe0b2;
+            padding: 6px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .price-tag b {
+            display: block;
+            color: var(--main-red);
+            font-size: 1rem;
+        }
+
+        .single-price-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price-val {
+            color: var(--main-red);
+            font-weight: 900;
+            font-size: 1.1rem;
+        }
+
+        .floating-action {
+            position: fixed;
+            bottom: 20px;
+            left: 15px;
+            right: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-fb { background-color: #1877f2; }
+        .btn-call { background-color: #2ecc71; }
+
+        .size-label { font-size: 0.7rem; color: #777; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="margin:0; font-size: 2rem;">PIZZERIA LE SELECT</h1>
+    <div class="location-info">
+        <i class="fas fa-map-marker-alt"></i> Aïn Nuwaisi, Mostaganem
+    </div>
+</header>
+
+<div class="container">
+    
+    <div class="category-header">PIZZA (M / L)</div>
+
+    <div class="menu-item">
+        <div class="item-name">Margherita</div>
+        <div class="prices-row">
+            <div class="price-tag"><span class="size-label">M</span><b>450 DA</b></div>
+            <div class="price-tag"><span class="size-label">L</span><b>900 DA</b></div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Végétarienne</div>
+        <div class="prices-row">
+            <div class="price-tag"><span class="size-label">M</span><b>550 DA</b></div>
+            <div class="price-tag"><span class="size-label">L</span><b>1000 DA</b></div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Campagne / Poulet</div>
+        <div class="prices-row">
+            <div class="price-tag"><span class="size-label">M</span><b>700 DA</b></div>
+            <div class="price-tag"><span class="size-label">L</span><b>1300 DA</b></div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">Mix / Mexicaine</div>
+        <div class="prices-row">
+            <div class="price-tag"><span class="size-label">M</span><b>800/750 DA</b></div>
+            <div class="price-tag"><span class="size-label">L</span><b>1400 DA</b></div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-name">4 Fromages / 4 Saisons</div>
+        <div class="prices-row">
+            <div class="price-tag"><span class="size-label">M</span><b>800 DA</b></div>
+            <div class="price-tag"><span class="size-label">L</span><b>1400 DA</b></div>
+        </div>
+    </div>
+
+    <div class="category-header">BURGERS</div>
+    <div class="menu-item">
+        <div class="item-name">Poulet</div>
+        <div class="prices-row">
+            <div class="price-tag"><span class="size-label">Simple</span><b>400 DA</b></div>
+            <div class="price-tag"><span class="size-label">Double</span><b>550 DA</b></div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-name">Viande</div>
+        <div class="prices-row">
+            <div class="price-tag"><span class="size-label">Simple</span><b>450 DA</b></div>
+            <div class="price-tag"><span class="size-label">Double</span><b>600 DA</b></div>
+        </div>
+    </div>
+
+    <div class="category-header">SANDWICHES</div>
+    <div class="menu-item">
+        <div class="single-price-box">
+            <div class="item-name">Poulet / Merguez</div>
+            <div class="price-val">400 DA</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="single-price-box">
+            <div class="item-name">Viande</div>
+            <div class="price-val">450 DA</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="single-price-box">
+            <div class="item-name">Mix</div>
+            <div class="price-val">500 DA</div>
+        </div>
+    </div>
+
+    <div class="category-header">TACOS</div>
+    <div class="menu-item">
+        <div class="single-price-box">
+            <div class="item-name">Poulet</div>
+            <div class="price-val">500 DA</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="single-price-box">
+            <div class="item-name">Viande</div>
+            <div class="price-val">550 DA</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="single-price-box">
+            <div class="item-name">Mix</div>
+            <div class="price-val">600 DA</div>
+        </div>
+    </div>
+
+</div>
+
+<div class="floating-action">
+    <a href="https://www.facebook.com/61554331006040" class="btn btn-fb" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a href="tel:0796476160" class="btn btn-call">
+        <i class="fas fa-phone-alt"></i> Appeler
+    </a>
+</div>
+
+</body>
+</html>
